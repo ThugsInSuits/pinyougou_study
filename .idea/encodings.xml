@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$/dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-mapper/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-reverser" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-reverser/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-reverser/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-sellergoods-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-sellergoods-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-sellergoods-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-sellergoods-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-sellergoods-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougou-sellergoods-service/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

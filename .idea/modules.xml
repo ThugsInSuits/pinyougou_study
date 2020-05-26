@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/angularjs-40demo/angularjs-40demo.iml" filepath="$PROJECT_DIR$/angularjs-40demo/angularjs-40demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-interface/dubbo-interface.iml" filepath="$PROJECT_DIR$/dubbo-interface/dubbo-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pinyougou.iml" filepath="$PROJECT_DIR$/.idea/pinyougou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-common/pinyougou-common.iml" filepath="$PROJECT_DIR$/pinyougou-common/pinyougou-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-manager-web/pinyougou-manager-web.iml" filepath="$PROJECT_DIR$/pinyougou-manager-web/pinyougou-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-mapper/pinyougou-mapper.iml" filepath="$PROJECT_DIR$/pinyougou-mapper/pinyougou-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-model/pinyougou-model.iml" filepath="$PROJECT_DIR$/pinyougou-model/pinyougou-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-parent/pinyougou-parent.iml" filepath="$PROJECT_DIR$/pinyougou-parent/pinyougou-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-reverser/pinyougou-reverser.iml" filepath="$PROJECT_DIR$/pinyougou-reverser/pinyougou-reverser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-sellergoods-interface/pinyougou-sellergoods-interface.iml" filepath="$PROJECT_DIR$/pinyougou-sellergoods-interface/pinyougou-sellergoods-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-sellergoods-service/pinyougou-sellergoods-service.iml" filepath="$PROJECT_DIR$/pinyougou-sellergoods-service/pinyougou-sellergoods-service.iml" />
+    </modules>
+  </component>
+</project>

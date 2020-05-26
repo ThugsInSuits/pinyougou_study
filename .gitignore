@@ -1,0 +1,10 @@
+# Project exclude paths
+/dubbo-consumer/target/
+/dubbo-provider/target/
+/pinyougou-common/target/
+/pinyougou-manager-web/target/
+/pinyougou-mapper/target/
+/pinyougou-model/target/
+/pinyougou-reverser/target/
+/pinyougou-sellergoods-interface/target/
+/pinyougou-sellergoods-service/target/
