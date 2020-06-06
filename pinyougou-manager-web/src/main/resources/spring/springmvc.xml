@@ -19,7 +19,7 @@
     <dubbo:consumer timeout="10000"  />
 
     <!--注册中心-->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://39.97.210.103:2181" />
 
     <!--包扫描-->
     <dubbo:annotation package="com.pinyougou.manager.controller" />

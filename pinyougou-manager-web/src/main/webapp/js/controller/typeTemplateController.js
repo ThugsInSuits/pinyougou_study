@@ -46,6 +46,7 @@ app.controller("typeTemplateController",function($scope,$http,$controller,typeTe
         //发送请求获取数据
         typeTemplateService.findAll(page,size,$scope.searchEntity).success(function(response){
             //集合数据
+            console.log("typeTemplate");
             $scope.list = response.list;
             //分页数据
             $scope.paginationConf.totalItems=response.total;

@@ -5,17 +5,17 @@
 app.controller("specificationController",function($scope,$http,$controller,specificationService){
 
     //定义一个集合，用于存储所有规格选项 存入entity对象中
-    //$scope.entity={specificationOptionList:[]}
+    $scope.entity = {specificationOptionList:[]};
 
     //新增一行规格属性
     $scope.addTableRow=function () {
         //往集合中增加一个空数据
-        $scope.entity.specificationOptionList.push({});
+        this.entity.specificationOptionList.push({});
     }
 
     //删除一行
     $scope.deleteTableRow=function (index) {
-        $scope.entity.specificationOptionList.splice(index,1);
+        this.entity.specificationOptionList.splice(index,1);
     }
 
 
