@@ -23,14 +23,17 @@
 	<script src="/plugins/angularjs/pagination.js"></script>
 
 	<script src="/js/base_pagination.js"></script>
+	<script src="/plugins/select2/angular-select2.js"></script>
 	<script src="/js/service/typeTemplateService.js"></script>
 	<script src="/js/controller/baseController.js"></script>
+	<script src="/js/service/brandService.js"></script>
+	<script src="/js/service/specificationService.js"></script>
 	<script src="/js/controller/typeTemplateController.js"></script>
 	<script type="text/javascript" src="/js/service/brandService.js"></script>
-	<script src="/js/service/specificationService.js"></script>
+
 </head>
 
-<body ng-app="pinyougou" ng-controller="typeTemplateController" class="hold-transition skin-red sidebar-mini" >
+<body ng-app="pinyougou" ng-controller="typeTemplateController" ng-init="findBrandList();findSpecList()" class="hold-transition skin-red sidebar-mini" >
   <!-- .box-body -->
                 
                     <div class="box-header with-border">
@@ -117,13 +120,15 @@
 		      	<tr>
 		      		<td>关联品牌</td>
 		      		<td>
-		      			
+						<input select2 select2-model="entity.brandIds" config="brandList" multiple
+						placeholder="选择品牌（可多选）" class="form-control" type="text">
 		      		</td>
 		      	</tr>
 		      	<tr>
 		      		<td>关联规格</td>
 		      		<td>
-
+						<input select2 select2-model="specIds.data" config="brandList" multiple
+							   placeholder="选择品牌（可多选）" class="form-control" type="text">
 		      		</td>
 		      	</tr>	
 		      	
@@ -155,11 +160,9 @@
 								</tr>
 							</tbody>
 						</table>	
-           
 		      		</td>
 		      	</tr>	
-		      	      
-			 </table>				
+			 </table>
 			
 		</div>
 		<div class="modal-footer">						

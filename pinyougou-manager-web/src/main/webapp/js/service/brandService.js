@@ -35,4 +35,9 @@ app.service("brandService",function($http){
         return $http.post("/brand/delete.shtml",ids);
     }
 
+    // 查询品牌的选项
+    this.selectOptionList = function () {
+        return $http.get("/brand/selectOptionList.shtml");
+    }
+
 });

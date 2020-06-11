@@ -9,11 +9,17 @@ app.controller("typeTemplateController",function($scope,$http,$controller,typeTe
 
     //id,text,获取所有品牌信息
     $scope.findBrandList=function () {
-        brandService.findBrandList().success(function (response) {
+        brandService.selectOptionList().success(function (response) {
             $scope.brandList = {data: response};
         });
     }
 
+    $scope.specIds = {data:[]};
+    $scope.findSpecList=function(){
+        specificationService.selectOptionList().success(function (response) {
+            $scope.specIds={data: response};
+        })
+    }
     
     //findOptionList
     $scope.specOptionList = {data: []};

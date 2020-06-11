@@ -62,6 +62,7 @@ app.controller("specificationController",function($scope,$http,$controller,speci
         specificationService.findOne(id).success(function(response){
             //将后台的数据绑定到前台
             $scope.entity=response;
+            console.log($scope.entity);
         });
     }
 

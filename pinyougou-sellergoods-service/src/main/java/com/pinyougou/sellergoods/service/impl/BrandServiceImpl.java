@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import tk.mybatis.mapper.entity.Example;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class BrandServiceImpl implements BrandService {
@@ -92,5 +93,14 @@ public class BrandServiceImpl implements BrandService {
         //所需的SQL语句类似 delete from tb_brand where id in(1,2,5,6)
         criteria.andIn("id",ids);
         return brandMapper.deleteByExample(example);
+    }
+
+    /**
+     * 返回品牌选项
+     * @return
+     */
+    @Override
+    public List<Map<String, Object>> selectOptionList() {
+        return brandMapper.selectOptionList();
     }
 }

@@ -50,12 +50,12 @@ app.controller("brandController",function($scope,$http,$controller,brandService)
     }
 
     //批量删除
-    $scope.delete=function(){
-        brandService.delete($scope.selectids).success(function(response){
+    $scope.delete=function() {
+        brandService.delete($scope.selectids).success(function (response) {
             //判断删除状态
-            if(response.success){
+            if (response.success) {
                 $scope.reloadList();
-            }else{
+            } else {
                 alert(response.message);
             }
         });

@@ -2,6 +2,7 @@ package com.pinyougou.sellergoods.service;
 import com.github.pagehelper.PageInfo;
 import com.pinyougou.model.Brand;
 import java.util.List;
+import java.util.Map;
 
 public interface BrandService {
 
@@ -46,4 +47,9 @@ public interface BrandService {
      * @return
      */
     int deleteByIds(List<Long> ids);
+
+    /**
+     * 返回选项里列表
+     */
+    List<Map<String,Object>> selectOptionList();
 }

@@ -117,4 +117,12 @@ public class BrandController {
     public List<Brand> list() {
         return brandService.getAll();
     }
+
+    /**
+     * 返回品牌的选项
+     */
+    @RequestMapping(value = "/selectOptionList",method = RequestMethod.GET)
+    public List<Map<String, Object>> jsonList(){
+        return brandService.selectOptionList();
+    }
 }
