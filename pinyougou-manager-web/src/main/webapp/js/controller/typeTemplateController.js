@@ -14,12 +14,6 @@ app.controller("typeTemplateController",function($scope,$http,$controller,typeTe
         });
     }
 
-    $scope.specIds = {data:[]};
-    $scope.findSpecList=function(){
-        specificationService.selectOptionList().success(function (response) {
-            $scope.specIds={data: response};
-        })
-    }
     
     //findOptionList
     $scope.specOptionList = {data: []};
@@ -52,7 +46,6 @@ app.controller("typeTemplateController",function($scope,$http,$controller,typeTe
         //发送请求获取数据
         typeTemplateService.findAll(page,size,$scope.searchEntity).success(function(response){
             //集合数据
-            console.log("typeTemplate");
             $scope.list = response.list;
             //分页数据
             $scope.paginationConf.totalItems=response.total;
@@ -61,6 +54,8 @@ app.controller("typeTemplateController",function($scope,$http,$controller,typeTe
 
     //添加或者修改方法
     $scope.save = function(){
+        // $scope.entity.customAttributeItems=angular.toJson($scope.entity.customAttributeItems);
+
         var result = null;
         if($scope.entity.id!=null){
             //执行修改数据
@@ -70,17 +65,20 @@ app.controller("typeTemplateController",function($scope,$http,$controller,typeTe
             result = typeTemplateService.add($scope.entity);
         }
         //判断操作流程
-        result.success(function(response){
+        console.log(result);
+        result.then(function (response){
             //判断执行状态
-            if(response.success){
+            console.log(response);
+            if(response.data.success){
                 //重新加载新的数据
                 $scope.reloadList();
             }else{
                 //打印错误消息
-                alert(response.message);
+                alert(response.data.message);
             }
         });
     }
+
 
     //根据ID查询信息
     $scope.getById=function(id){
