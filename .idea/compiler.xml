@@ -7,18 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pinyougou-manager-web" />
-        <module name="pinyougou-common" />
+        <module name="pinyougou-reverser" />
         <module name="pinyougou-sellergoods-interface" />
         <module name="dubbo-consumer" />
         <module name="pinyougou-model" />
+        <module name="pinyougou-common" />
         <module name="dubbo-interface" />
-        <module name="pinyougou-reverser" />
         <module name="dubbo-provider" />
         <module name="pinyougou-mapper" />
         <module name="pinyougou-sellergoods-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="dubbo-consumer" target="8" />
       <module name="dubbo-interface" target="8" />
       <module name="dubbo-provider" target="8" />

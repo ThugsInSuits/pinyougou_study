@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean:beans xmlns="http://www.springframework.org/schema/security"
+            xmlns:bean="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!-- 不需要权限控制的资源 -->
+    <http pattern="/login.html" security="none"></http>
+    <http pattern="/login_error.html" security="none"></http>
+    <http pattern="/css/**" security="none"></http>
+    <http pattern="/img/**" security="none"></http>
+    <http pattern="/js/**" security="none"></http>
+    <http pattern="/plugins/**" security="none"></http>
+
+    <!-- 拦截规则 -->
+    <http auto-config="true" use-expressions="true">
+        <intercept-url pattern="/**" access="hasRole('ROLE_USER')"/>
+        <form-login
+                login-page="/login.html"
+                login-processing-url="/login"
+                default-target-url="/admin/index.html"
+                always-use-default-target="true"
+                authentication-failure-url="/login_error.html"/>
+        <csrf disabled="true"/>
+
+        <headers>
+            <frame-options policy="SAMEORIGIN"/>
+        </headers>
+        <!-- 退出登录地址：/logout -->
+        <logout/>
+
+    </http>
+
+    <!-- 认证管理器 -->
+    <authentication-manager>
+        <authentication-provider>
+            <user-service>
+                <user name="admin" password="123456" authorities="ROLE_USER"/>
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+</bean:beans>
